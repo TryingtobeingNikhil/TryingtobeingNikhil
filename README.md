@@ -20,7 +20,7 @@ I'm passionate about applying machine learning to solve real-world problems, wit
 ### 🤖 [Transformer from Scratch](https://github.com/TryingtobeingNikhil/AttentionIsALLICode)
 Complete implementation of "Attention Is All You Need" in PyTorch - multi-head attention, positional encoding, and full encoder-decoder architecture built from first principles.
 
-### 🧬 Cancer Classification (100% Accuracy)
+### 🧬 Cancer Classification (91.56% Accuracy)
 ML pipeline for AML vs ALL classification using gene expression data - Implemented 6+ algorithms (Naive Bayes, SVM, Random Forest, XGBoost, Neural Networks) with PCA, hyperparameter tuning, and SHAP analysis on the Golub dataset.
 
 ### 🏥 Pruned U-Net (IIT Kharagpur)
