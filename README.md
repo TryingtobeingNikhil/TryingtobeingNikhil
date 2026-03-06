@@ -1,4 +1,4 @@
-# Hi there, I'm Nikhil Mourya 👋
+# Hi there, I'm Nikhil Mourya..
 
 ### 🎓 BIT Mesra
 ### 🤖 ML Engineer | Deep Learning Enthusiast | Competitive Programmer
