@@ -37,6 +37,14 @@ Biomedical image segmentation with 97.3% parameter reduction and 92% FLOP reduct
 
 ---
 
+## 📊 GitHub Statistics
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TryingtobeingNikhil&layout=compact&theme=radical)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=TryingtobeingNikhil&theme=radical)
+
+---
+
 ## 📈 Competitive Programming
 
 - 🏅 **Codeforces:** Pupil (1200+ rating)
