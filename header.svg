@@ -1,0 +1,140 @@
+<svg width="1000" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a06;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#040804;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glow filter for text -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle glow for accents -->
+    <filter id="accentGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scanline pattern — ultra-subtle -->
+    <pattern id="scanlines" x="0" y="0" width="1000" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1000" height="1" fill="#00ff41" opacity="0.015"/>
+    </pattern>
+
+    <!-- Dot grid -->
+    <pattern id="dotgrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="0.6" fill="#00ff41" opacity="0.07"/>
+    </pattern>
+
+    <!-- Clip path for right side decoration -->
+    <clipPath id="rightClip">
+      <rect x="700" y="0" width="300" height="250"/>
+    </clipPath>
+
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1000" height="250" fill="url(#bgGrad)"/>
+
+  <!-- Dot grid overlay -->
+  <rect width="1000" height="250" fill="url(#dotgrid)"/>
+
+  <!-- Scanlines overlay -->
+  <rect width="1000" height="250" fill="url(#scanlines)"/>
+
+  <!-- ─── Geometric corner accents ─── -->
+  <!-- Top-left bracket -->
+  <polyline points="24,10 10,10 10,24" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.5"/>
+  <!-- Bottom-left bracket -->
+  <polyline points="10,226 10,240 24,240" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.5"/>
+  <!-- Top-right bracket -->
+  <polyline points="976,10 990,10 990,24" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.5"/>
+  <!-- Bottom-right bracket -->
+  <polyline points="990,226 990,240 976,240" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- ─── Left vertical accent line ─── -->
+  <line x1="38" y1="50" x2="38" y2="200" stroke="#00ff41" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- ─── Animated horizontal rule below name ─── -->
+  <rect x="60" y="172" width="0" height="1" fill="#00ff41" opacity="0.5">
+    <animate attributeName="width" from="0" to="570" dur="1.2s" fill="freeze" begin="0.3s"/>
+  </rect>
+
+  <!-- ─── Glowing orb — right side ─── -->
+  <circle cx="870" cy="125" r="60" fill="#00ff41" opacity="0.018" filter="url(#accentGlow)"/>
+  <circle cx="870" cy="125" r="35" fill="#00ff41" opacity="0.025" filter="url(#accentGlow)">
+    <animate attributeName="opacity" values="0.025;0.04;0.025" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ─── Decorative ring ─── -->
+  <circle cx="870" cy="125" r="55" fill="none" stroke="#00ff41" stroke-width="0.5" opacity="0.07"/>
+  <circle cx="870" cy="125" r="40" fill="none" stroke="#00ff41" stroke-width="0.5" opacity="0.1">
+    <animateTransform attributeName="transform" type="rotate" from="0 870 125" to="360 870 125" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 251;251 0" dur="20s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Ring tick marks -->
+  <circle cx="870" cy="70" r="1.5" fill="#00ff41" opacity="0.3"/>
+  <circle cx="925" cy="125" r="1.5" fill="#00ff41" opacity="0.3"/>
+  <circle cx="870" cy="180" r="1.5" fill="#00ff41" opacity="0.3"/>
+  <circle cx="815" cy="125" r="1.5" fill="#00ff41" opacity="0.3"/>
+
+  <!-- ─── Terminal prompt lines ─── -->
+  <text x="60" y="68" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" fill="#00ff41" opacity="0">
+    <tspan>&gt; initializing...</tspan>
+    <animate attributeName="opacity" from="0" to="0.35" dur="0.1s" fill="freeze" begin="0.1s"/>
+  </text>
+
+  <text x="60" y="86" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" fill="#00cc66" opacity="0">
+    <tspan>&gt; loading <tspan fill="#00ff41">nikhil.config</tspan> ✓</tspan>
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.1s" fill="freeze" begin="0.5s"/>
+  </text>
+
+  <!-- ─── Main name ─── -->
+  <text x="60" y="160" font-family="'JetBrains Mono','Fira Code',monospace" font-size="58" font-weight="700" fill="#00ff41" filter="url(#softGlow)" opacity="0" letter-spacing="-1">
+    <tspan>Nikhil Mourya</tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.2s"/>
+  </text>
+
+  <!-- ─── Blinking block cursor after name ─── -->
+  <rect x="636" y="113" width="8" height="46" fill="#00ff41" opacity="1">
+    <animate attributeName="opacity" values="1;0;1" dur="0.85s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="1.5s"/>
+    <set attributeName="opacity" to="0" begin="0s"/>
+  </rect>
+
+  <!-- ─── Subtitle / role tag ─── -->
+  <text x="60" y="200" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#00cc66" opacity="0" letter-spacing="2">
+    <tspan>debugging life one bug at a time</tspan>
+    <animate attributeName="opacity" from="0" to="0.55" dur="0.3s" fill="freeze" begin="1.1s"/>
+  </text>
+
+  <!-- ─── Status indicator dot ─── -->
+  <circle cx="60" cy="224" r="4" fill="#00ff41" opacity="0">
+    <animate attributeName="opacity" from="0" to="0.9" dur="0.1s" fill="freeze" begin="1.8s"/>
+    <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+  <text x="72" y="228" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" fill="#00ff41" opacity="0">
+    <tspan>ONLINE</tspan>
+    <animate attributeName="opacity" from="0" to="0.5" dur="0.1s" fill="freeze" begin="1.8s"/>
+  </text>
+
+  <!-- ─── Glitch flash overlays ─── -->
+  <rect width="1000" height="250" fill="#00ff41" opacity="0">
+    <animate attributeName="opacity" values="0;0.025;0" dur="0.06s" begin="1.2s" fill="freeze"/>
+  </rect>
+  <rect width="1000" height="250" fill="#00ff41" opacity="0">
+    <animate attributeName="opacity" values="0;0.018;0" dur="0.06s" begin="7.5s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+
+</svg>
