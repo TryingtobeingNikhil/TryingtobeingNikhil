@@ -84,17 +84,16 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 *And a healthy fear of overfitting.*
 
 ---
-
 ## 📊 GitHub Stats
 *Proof that I actually write code (and occasionally remember to commit it)*
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TryingtobeingNikhil&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=c9d1d9&ring_color=00ff41" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TryingtobeingNikhil&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9" height="170"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TryingtobeingNikhil&theme=github_dark" alt="Profile Summary"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=TryingtobeingNikhil&theme=dark&hide_border=true&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41&sideNums=00ff41&currStreakNum=c9d1d9&dates=8b949e&sideLabels=c9d1d9" alt="GitHub Streak"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TryingtobeingNikhil&theme=github_dark" height="180"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TryingtobeingNikhil&theme=github_dark&utcOffset=5.5" height="180"/>
 </p>
 
 <p align="center">
