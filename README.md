@@ -86,19 +86,20 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 ---
 
 ## 📊 GitHub Stats
-
 *Proof that I actually write code (and occasionally remember to commit it)*
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TryingtobeingNikhil&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&cache_seconds=1800" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TryingtobeingNikhil&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&cache_seconds=1800" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=TryingtobeingNikhil&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=c9d1d9&ring_color=00ff41" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TryingtobeingNikhil&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9" height="170"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=TryingtobeingNikhil&theme=radical&hide_border=true&background=0d1117"/>
+  <img src="https://streak-stats.demolab.com?user=TryingtobeingNikhil&theme=dark&hide_border=true&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41&sideNums=00ff41&currStreakNum=c9d1d9&dates=8b949e&sideLabels=c9d1d9" alt="GitHub Streak"/>
 </p>
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=TryingtobeingNikhil&theme=react-dark&hide_border=true)
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TryingtobeingNikhil&bg_color=0d1117&color=00ff41&line=00cc66&point=00ff41&area=true&hide_border=true&custom_title=Contribution%20Graph&area_color=00ff41" alt="Contribution Graph"/>
+</p>
 ---
 
 ## 🏆 Achievements
