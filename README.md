@@ -141,3 +141,8 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 <p align="center">
   <sub><i>P.S. If you're reading this, my SEO worked or you're really bored. Either way, hi! 👋</i></sub>
 </p>
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/output/github-contribution-grid-snake.svg"/>
+</p>
