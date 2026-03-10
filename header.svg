@@ -101,7 +101,7 @@
   </text>
 
   <!-- ─── Main name ─── -->
-  <text x="60" y="160" font-family="'JetBrains Mono','Fira Code',monospace" font-size="58" font-weight="700" fill="#00ff41" filter="url(#softGlow)" opacity="0" letter-spacing="-1">
+  <text x="60" y="160" font-family="'JetBrains Mono','Fira Code',monospace" font-size="58" font-weight="700" fill="#00ff40b5" filter="url(#softGlow)" opacity="0" letter-spacing="-1">
     <tspan>Nikhil Mourya</tspan>
     <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.2s"/>
   </text>
