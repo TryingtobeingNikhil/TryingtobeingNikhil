@@ -1,6 +1,6 @@
 ![Header](./header.svg)
 
-> debugging life one bug at a time
+> Debugging life one bug at a time
 @ BIT Mesra 
 ## 👨‍💻 About Me
 
