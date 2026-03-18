@@ -1,4 +1,4 @@
-![Header](./header.svg)
+![Header](./header.png)
 
 > Debugging life one bug at a time
 @ BIT Mesra 
