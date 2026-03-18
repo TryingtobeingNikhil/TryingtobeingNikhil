@@ -10,6 +10,24 @@ Occasionally debugging neural networks, datasets, and my own assumptions.
 
 ---
 
+## 📫 Connect With Me
+
+<i>I promise I respond faster than my model's training time 🚀</i>
+
+<p align="center">
+  <a href="mailto:tsmftxnikhil14@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://x.com/GonnabeNikhil">
+    <img src="https://img.shields.io/badge/Twitter(X)-000000?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/not_nikhil14">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</p>
+
+---
+
 ## 💼 Experience
 
 **🏢 Machine Learning Intern @ HireBuddy** | *May 2025 – Jul 2025*
@@ -185,24 +203,6 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 - 🎯 **200+ problems solved** across competitive programming platforms
 
 *Currently grinding for that Specialist rank. Send encouragement (or better yet, test cases).*
-
----
-
-## 📫 Connect With Me
-
-*I promise I respond faster than my model's training time*
-
-<p align="center">
-  <a href="https://linkedin.com/in/nikhil-mourya-36913a300">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:tsmftxnikhil14@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://github.com/TryingtobeingNikhil">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-</p>
 
 ---
 
