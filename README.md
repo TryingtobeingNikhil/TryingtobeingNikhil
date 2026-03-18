@@ -72,16 +72,92 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 *Because training 767M parameters is expensive, and I'm not Google.*
 
 ---
+## 🛠️ Languages and Tools
 
-## 🛠️ Tech Stack
+<div align="center">
 
-**Languages:** Python • C++ • SQL  
-**ML/DL:** PyTorch • TensorFlow • Scikit-learn • Hugging Face Transformers • PEFT (LoRA)  
-**Data Science:** NumPy • Pandas • Matplotlib  
-**Tools:** Git • Flask • MySQL • Google Cloud Platform  
-**Specialties:** Model Optimization • Computer Vision • NLP • Parameter-Efficient Fine-Tuning
+<table>
+  <tr>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python"/>
+      <br><b>Python</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="48" height="48" alt="C++"/>
+      <br><b>C++</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="48" height="48" alt="SQL"/>
+      <br><b>SQL</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg" width="48" height="48" alt="PyTorch"/>
+      <br><b>PyTorch</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" width="48" height="48" alt="TensorFlow"/>
+      <br><b>TensorFlow</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="48" height="48" alt="Scikit-learn"/>
+      <br><b>Scikit-learn</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" width="48" height="48" alt="NumPy"/>
+      <br><b>NumPy</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="48" height="48" alt="Pandas"/>
+      <br><b>Pandas</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="48" height="48" alt="HuggingFace"/>
+      <br><b>HuggingFace</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" width="48" height="48" alt="OpenCV"/>
+      <br><b>OpenCV</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" width="48" height="48" alt="Flask"/>
+      <br><b>Flask</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" width="48" height="48" alt="GCP"/>
+      <br><b>GCP</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="48" height="48" alt="Docker"/>
+      <br><b>Docker</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" height="48" alt="Git"/>
+      <br><b>Git</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg" width="48" height="48" alt="Jupyter"/>
+      <br><b>Jupyter</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="48" height="48" alt="Linux"/>
+      <br><b>Linux</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="48" height="48" alt="VS Code"/>
+      <br><b>VS Code</b>
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="48" height="48" alt="GitHub"/>
+      <br><b>GitHub</b>
+    </td>
+  </tr>
+</table>
 
-*And a healthy fear of overfitting.*
+</div>
 
 ---
 ## 📊 GitHub Stats
