@@ -1,4 +1,6 @@
-![Header](https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/main/header.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/main/header.png" />
+</p>
 
 > Debugging life one bug at a time
 @ BIT Mesra 
@@ -178,20 +180,13 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 </div>
 
 ---
-## 📊 GitHub Stats
-*Proof that I actually write code (and occasionally remember to commit it)*
-
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TryingtobeingNikhil&theme=github_dark" alt="Profile Summary"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=TryingtobeingNikhil&show_icons=true&theme=github_dark" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TryingtobeingNikhil&layout=compact&theme=github_dark" height="180"/>
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TryingtobeingNikhil&theme=github_dark" height="180"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TryingtobeingNikhil&theme=github_dark&utcOffset=5.5" height="180"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TryingtobeingNikhil&bg_color=0d1117&color=00ff41&line=00cc66&point=00ff41&area=true&hide_border=true&custom_title=Contribution%20Graph&area_color=00ff41" alt="Contribution Graph"/>
+  <img src="https://streak-stats.demolab.com?user=TryingtobeingNikhil&theme=github-dark" />
 </p>
 ---
 
