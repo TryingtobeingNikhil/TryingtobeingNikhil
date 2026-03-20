@@ -1,4 +1,4 @@
-![Header](https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/main/Header.png)
+![Header](https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/main/header.png)
 
 > Debugging life one bug at a time
 @ BIT Mesra 
