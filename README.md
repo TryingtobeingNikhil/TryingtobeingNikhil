@@ -1,4 +1,4 @@
-![Header](./header.png)
+![Header](./name.png)
 
 > Debugging life one bug at a time
 @ BIT Mesra 
