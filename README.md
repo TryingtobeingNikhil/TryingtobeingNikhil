@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/61057666/169029838-74df663d-2e62-4d77-bdff-b43f7d63f00f.png" width="100%" />
+</p>
 
 > Debugging life one bug at a time
 @ BIT Mesra 
@@ -178,13 +180,10 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 </div>
 
 ---
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TryingtobeingNikhil&show_icons=true&theme=github_dark" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TryingtobeingNikhil&layout=compact&theme=github_dark" height="180"/>
-</p>
+## 🐍 Contribution Graph
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=TryingtobeingNikhil&theme=github-dark" />
+  <img src="https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/output/github-contribution-grid-snake-dark.svg" />
 </p>
 ---
 
