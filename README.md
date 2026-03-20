@@ -1,4 +1,6 @@
-![Header](./name.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/main/name.png" alt="Header" />
+</p>
 
 > Debugging life one bug at a time
 @ BIT Mesra 
