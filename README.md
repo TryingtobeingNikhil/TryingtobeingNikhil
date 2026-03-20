@@ -180,11 +180,7 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 </div>
 
 ---
-## 🐍 Contribution Graph
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/output/github-contribution-grid-snake-dark.svg" />
-</p>
 ---
 
 ## 🏆 Achievements
