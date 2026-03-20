@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/TryingtobeingNikhil/TryingtobeingNikhil/main/header.png" />
-</p>
+
 
 > Debugging life one bug at a time
 @ BIT Mesra 
