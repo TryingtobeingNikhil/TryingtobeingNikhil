@@ -9,7 +9,7 @@ I'm passionate about applying machine learning to solve real-world problems, wit
 
 Occasionally debugging neural networks, datasets, and my own assumptions.
 
----
+--
 
 ## 📫 Connect With Me
 
