@@ -201,5 +201,5 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 </p>
 
 <p align="center">
-  <sub><i>P.S. If you're reading this, my SEO worked or you're really bored. Either way, hi! 👋</i></sub>
+  <sub><i>P.S. If you're reading this, my SEO worked or you're really bored. Either way, hi! </i></sub>
 </p>
