@@ -3,6 +3,7 @@
 </p>
 > Debugging life one bug at a time
 @ BIT Mesra 
+
 ## 👨‍💻 About Me
 
 I'm passionate about applying machine learning to solve real-world problems, with a strong focus on **Deep Learning**, **Computer Vision**, and **NLP**. I specialize in building efficient AI systems through model optimization, parameter-efficient fine-tuning, and production-ready ML pipelines.
