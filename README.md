@@ -186,7 +186,7 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 
 - 🥇 **Finalist** - Smart India Hackathon 2023
 - 🥇 **Finalist** - IIIT Delhi Hackathon 2024
-- 💻 **Codeforces** - Pupil (1250+ rating)
+- 💻 **Codeforces** - specialist (1400+ rating)
 - 🎯 **200+ problems solved** across competitive programming platforms
 
 *Currently grinding for that Specialist rank. Send encouragement (or better yet, test cases).*
