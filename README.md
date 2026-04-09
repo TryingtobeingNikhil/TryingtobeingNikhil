@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/61057666/169029838-74df663d-2e62-4d77-bdff-b43f7d63f00f.png" width="100%" />
 </p>
+
 > Debugging life one bug at a time
 @ BIT Mesra 
 
@@ -32,29 +33,28 @@ Occasionally debugging neural networks, datasets, and my own assumptions.
 
 ## 💼 Experience
 
-**🏢 Machine Learning Intern @ HireBuddy** | *May 2025 – Jul 2025*
+**🏢 Founding Member — ML & Product @ HireBuddy** *(Live)* | *May 2025 – Nov 2025*
 
-- Built an NLP-based resume screening model processing **10,000+ resumes daily** with **35% improved accuracy**
-- Designed evaluation pipelines achieving **92% model performance**
-- Collaborated with product teams to increase user engagement by **40%**
+- Built and deployed an AI-powered resume-job matching system from 0→1 using **RAG pipelines** and **Transformers**, improving shortlisting accuracy by **35%** and processing **10K+ resumes/day**
+- Designed end-to-end NLP pipelines for job-fit scoring, candidate ranking, and automated feedback generation using **LangChain**, achieving **92% model performance**
+- Deployed ML models via **Flask + GCP** with Docker containerization; integrated REST APIs with recruiter-facing product, increasing user engagement by **40%**
+- Collaborated with founders on ML-product strategy, translating hiring workflows into data-driven features
 
 *The model reviewed more resumes in a day than I probably will in my lifetime.*
 
 ---
 
-**🤖 Machine Learning Engineer @ IIIT Delhi Hackathon** | *Aug 2024*
+**🤖 Machine Learning Engineer @ IIIT Delhi Hackathon** *(Finalist)* | *Aug 2024*
 
-- Developed image classification system using **ResNet50** with transfer learning achieving **94% accuracy**
-- Optimized model performance with Grid Search, reducing training time by **30%**
+- Trained **ResNet50** classifier achieving **94% accuracy**; reduced training time by **30%** via mixed-precision training and optimized data loading
 
 *Turns out standing on the shoulders of pre-trained giants is a solid strategy.*
 
 ---
 
-**💻 ML & Backend Developer @ Smart India Hackathon** | *Oct 2023*
+**💻 ML & Backend Developer @ Smart India Hackathon** *(Finalist)* | *Oct 2024*
 
-- Built hospital management system using Random Forest, XGBoost, and Linear Regression
-- Reduced predicted patient wait time by **28%**
+- Built ML-powered hospital queue system reducing predicted patient wait time by **28%**
 - Deployed Flask APIs on **Google Cloud Platform** with **99.5% uptime**
 
 *Built this during the hackathon, survived on coffee and optimism.*
@@ -63,9 +63,9 @@ Occasionally debugging neural networks, datasets, and my own assumptions.
 
 ## 🚀 Featured Projects
 
-### 🧬 [Pruned U-Net for Biomedical Image Segmentation](https://github.com/TryingtobeingNikhil/Pruned-U-Net) | *IIT Kharagpur*
+### 🧬 [Pruned U-Net for Biomedical Image Segmentation](https://github.com/TryingtobeingNikhil/Pruned-U-Net) | *IIT Kharagpur · Mar 2025*
 
-Implemented pruning-based optimization pipeline for U-Net achieving **97.3% parameter reduction** and **92% FLOP reduction** while maintaining **IoU > 0.95** on MoNuSeg dataset.
+Built a structured magnitude pruning pipeline for U-Net achieving **97.3% parameter reduction** and **92% FLOP reduction** while maintaining **IoU > 0.95** on MoNuSeg dataset. Fully reproducible via config.
 
 **Tech:** Python, TensorFlow, CNN, Model Optimization
 
@@ -73,9 +73,9 @@ Implemented pruning-based optimization pipeline for U-Net achieving **97.3% para
 
 ---
 
-### 🤖 [AttentionIsALLICode: Transformer from Scratch](https://github.com/TryingtobeingNikhil/AttentionIsALLICode)
+### 🤖 [AttentionIsALLICode: GPT-style Transformer LM](https://github.com/TryingtobeingNikhil/AttentionIsALLICode) | *Oct 2025*
 
-Complete implementation of "Attention Is All You Need" in PyTorch. Built multi-head self-attention, positional encoding, and full encoder-decoder architecture from first principles.
+Implemented a GPT-style Transformer Language Model from scratch in PyTorch — multi-head self-attention, positional encoding, residual connections; modular pipeline with configurable depth and context length.
 
 **Tech:** Python, PyTorch, Transformers
 
@@ -83,11 +83,11 @@ Complete implementation of "Attention Is All You Need" in PyTorch. Built multi-h
 
 ---
 
-### 📝 [PEGASUS + LoRA: Parameter-Efficient Fine-Tuning](https://github.com/TryingtobeingNikhil/PEGASUS-LoRA)
+### 📝 [PEGASUS + LoRA: Parameter-Efficient Fine-Tuning](https://github.com/TryingtobeingNikhil/PEGASUS-LoRA) | *Feb 2026*
 
-Implemented LoRA for abstractive text summarization achieving **99.8% parameter reduction** (767M → 1.57M) and **27× faster training** vs. full fine-tuning.
+Applied LoRA adapters on PEGASUS via HuggingFace PEFT; reduced trainable parameters **767M → 1.57M (99.8%)** and achieved **27× faster training** vs. full fine-tuning. Served via **FastAPI** endpoint with Docker packaging.
 
-**Tech:** Python, PyTorch, HuggingFace, PEFT, LoRA
+**Tech:** Python, PyTorch, HuggingFace, PEFT, LoRA, FastAPI, Docker
 
 *Because training 767M parameters is expensive, and I'm not Google.*
 
@@ -184,12 +184,12 @@ Implemented LoRA for abstractive text summarization achieving **99.8% parameter 
 
 ## 🏆 Achievements
 
-- 🥇 **Finalist** - Smart India Hackathon 2023
+- 🥇 **Finalist** - Smart India Hackathon 2024
 - 🥇 **Finalist** - IIIT Delhi Hackathon 2024
-- 💻 **Codeforces** - specialist (1400+ rating)
+- 💻 **Codeforces** - Pupil (1300+ rating)
 - 🎯 **200+ problems solved** across competitive programming platforms
 
-*Currently grinding for that Specialist rank. Send encouragement (or better yet, test cases).*
+*Currently grinding LeetCode and Codeforces. Send encouragement (or better yet, test cases).*
 
 ---
 
