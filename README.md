@@ -9,8 +9,7 @@
 ---
 
 I work at the intersection of model compression and production ML — shrinking models without losing what they're for, then shipping them somewhere real. My projects aren't independent experiments; they're a single obsession with one question: *how much can you remove before the model stops being useful?*
-
-Currently a 3rd-year Engineering Physics & Computing student at BIT Mesra.  
+Debugging life at BIT Mesra.  
 Founding ML Member at [HireBuddy](https://www.hirebuddy.net) — building AI hiring infrastructure that processes 10K+ resumes/day in production.
 
 ```
