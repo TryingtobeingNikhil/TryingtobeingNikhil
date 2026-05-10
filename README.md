@@ -9,9 +9,13 @@
 ---
 
 I work at the intersection of model compression and production ML — shrinking models without losing what they're for, then shipping them somewhere real. My projects aren't independent experiments; they're a single obsession with one question: *how much can you remove before the model stops being useful?*
+
 ---
+
 Debugging life at BIT Mesra.
+
 ---
+
 Founding ML Member at [HireBuddy](https://www.hirebuddy.net) — building AI hiring infrastructure that processes 10K+ resumes/day in production.
 
 ```
@@ -29,6 +33,7 @@ My work follows a thread: **train lean, compress hard, ship it.**
 
 | Project | The Question I Was Answering | Result |
 |---|---|---|
+| [Agentic RAG Chatbot](#-agentic-rag-chatbot--autonomous-retrieval-system) | Can an LLM plan its own retrieval instead of just being handed chunks? | Multi-step retrieval with iterative reasoning & query rewriting |
 | [Pruned U-Net](#-pruned-u-net--biomedical-segmentation) | How much of a segmentation model is actually load-bearing? | 97.3% params removed, IoU > 0.95 held |
 | [PEGASUS + LoRA](#-pegasus--lora--efficient-summarization) | Can you fine-tune a 767M model on a student budget? | 99.8% param reduction, 27× faster training |
 | [AttentionIsALLICode](#-attentionisallicode--gpt-transformer-from-scratch) | Do I actually understand attention, or just import it? | Full GPT-style LM, zero frameworks |
@@ -37,6 +42,21 @@ My work follows a thread: **train lean, compress hard, ship it.**
 ---
 
 ## Projects
+
+### 🤖 Agentic RAG Chatbot · Autonomous Retrieval System
+*2026*
+
+**The problem:** Standard RAG pipelines are passive — they retrieve once and answer. Real queries often need multiple retrieval steps, context refinement, and the ability to recognize when the first answer wasn't good enough.
+
+**What I did:** Built an agentic RAG system with autonomous query planning, multi-step retrieval, and iterative reasoning. Integrated LLMs with a vector DB and tool-calling; added memory and query rewriting to improve answer relevance across turns.
+
+**What I learned:** The hard part isn't retrieval — it's knowing when to retrieve again. Getting the agent to recognize low-confidence states and replan is where most of the engineering effort went.
+
+`Python` `LangChain` `LangGraph` `LLMs` `Vector DB` `RAG`
+
+[→ View Repository](https://github.com/TryingtobeingNikhil/Agentic-RAG-Chatbot)
+
+---
 
 ### 🧬 Pruned U-Net · Biomedical Segmentation
 *IIT Kharagpur collaboration · Mar 2025*
@@ -49,8 +69,6 @@ My work follows a thread: **train lean, compress hard, ship it.**
 
 **What surprised me:** The model was more robust to pruning than expected up to a threshold, then collapsed quickly. The threshold, not the pruning method, is what actually matters to tune.
 
-*97.3% smaller, 100% as accurate. Marie Kondo would be proud.*
-
 `PyTorch` `TensorFlow` `U-Net` `Model Pruning` `Computer Vision` `MoNuSeg`
 
 [→ View Repository](https://github.com/TryingtobeingNikhil/Pruned-U-Net)
@@ -62,11 +80,9 @@ My work follows a thread: **train lean, compress hard, ship it.**
 
 **The problem:** Full fine-tuning a 767M parameter model requires compute most practitioners don't have. The question is whether LoRA adapters can close that gap without meaningful quality loss.
 
-**What I did:** Applied rank-decomposition adapters via HuggingFace PEFT, targeting attention weight matrices. Rank selection (r=16) was the critical decision — lower ranks trained faster but degraded ROUGE scores noticeably; higher ranks approached full fine-tuning cost. Served via FastAPI with Docker packaging for reproducible deployment.
+**What I did:** Applied rank-decomposition adapters via HuggingFace PEFT, targeting attention weight matrices. Rank selection (r=16) was the critical decision — lower ranks trained faster but degraded ROUGE scores noticeably; higher ranks approached full fine-tuning cost. Served via FastAPI with Docker packaging.
 
 **Results:** 767M → 1.57M trainable parameters (99.8% reduction) · 27× faster training · FastAPI endpoint · Docker packaged
-
-**What I'd do differently:** Experiment with LoRA on FFN layers in addition to attention — some recent work suggests this recovers quality at similar parameter cost.
 
 *Because training 767M parameters is expensive, and I'm not Google.*
 
@@ -76,16 +92,14 @@ My work follows a thread: **train lean, compress hard, ship it.**
 
 ---
 
-### 🤖 AttentionIsALLICode · GPT Transformer from Scratch
+### 🔤 AttentionIsALLICode · GPT Transformer from Scratch
 *Oct 2025*
 
-**The problem:** Most people use transformers. Fewer understand what's actually happening inside the attention computation. I wanted to verify my own understanding by building it with no framework abstractions.
+**The problem:** Most people use transformers. Fewer understand what's actually happening inside the attention computation.
 
-**What I did:** Full GPT-style language model in raw PyTorch — multi-head self-attention, causal masking, positional encoding, residual connections, layer norm. Modular architecture with configurable depth, heads, and context length. Custom training loop with gradient clipping and cosine LR schedule.
+**What I did:** Full GPT-style language model in raw PyTorch — multi-head self-attention, causal masking, positional encoding, residual connections, layer norm. Custom training loop with gradient clipping and cosine LR schedule.
 
-**What I learned:** The gap between "I understand attention" and "I can implement attention and debug why it's not training" is significant. Residual connections matter more than most tutorials suggest — removing them makes the model nearly untrainable at 6+ layers.
-
-*Built to answer "But how does attention actually work?" Spoiler: it's all matrix multiplication. Humbling matrix multiplication.*
+**What I learned:** The gap between "I understand attention" and "I can implement attention and debug why it's not training" is significant. Residual connections matter more than most tutorials suggest.
 
 `PyTorch` `Transformers` `NLP` `From Scratch`
 
@@ -98,11 +112,9 @@ My work follows a thread: **train lean, compress hard, ship it.**
 
 **The problem:** Vector databases have become the default assumption in RAG architectures. I wanted to know if that default is load-bearing or just conventional.
 
-**What I did:** Full retrieval-augmented generation pipeline using tree traversal and keyword-based retrieval — no embeddings, no vector index, no similarity search. Uses Ollama + LLaMA 3 locally.
+**What I did:** Full RAG pipeline using tree traversal and keyword-based retrieval — no embeddings, no vector index, no similarity search. Uses Ollama + LLaMA 3 locally. Performs well on structured, domain-specific corpora; degrades on semantically ambiguous queries where dense retrieval has a real advantage.
 
-**When it works / when it doesn't:** Performs well on structured, domain-specific corpora where keyword signal is strong. Degrades on semantically ambiguous queries where dense retrieval has a real advantage. The experiment clarified *when* vector DBs earn their complexity — which is the actual useful output.
-
-*Half the RAG stacks I meet are a vector DB cosplaying as a product requirement. Wanted to find out when the costume is actually necessary.*
+*Half the RAG stacks I meet are a vector DB cosplaying as a product requirement.*
 
 `Python` `Ollama` `LLaMA 3` `RAG` `Tree Traversal` `Streamlit`
 
@@ -114,37 +126,29 @@ My work follows a thread: **train lean, compress hard, ship it.**
 
 **Founding ML Member · [HireBuddy](https://www.hirebuddy.net)** *(May 2025 – Nov 2025)*
 
-Built the ML infrastructure from zero — resume-job matching via RAG pipelines and Transformers, NLP pipelines for job-fit scoring and candidate ranking, Flask + Docker deployment on GCP. The system processes 10K+ resumes/day in production.
-
-The interesting engineering problem wasn't the model — it was making the pipeline fast and reliable enough that recruiters trusted it over their own judgment.
+Built the ML infrastructure from zero — resume-job matching via transformer-based embeddings and RAG pipelines, improving shortlist precision by 35%. NLP pipelines for job-fit scoring and candidate ranking via LangChain. Flask + Docker deployment on GCP Cloud Run with REST API integration into recruiter workflows, increasing platform engagement by 40%. The system processes 10K+ resumes/day in production.
 
 Key decisions: chunking strategy for resume parsing, reranking pipeline design, latency vs accuracy tradeoff for real-time scoring.
-
-*The model reviewed more resumes in a week than I probably will in my lifetime. I try not to think about it.*
 
 ---
 
 ## Hackathons
 
-**Smart India Hackathon 2024 · Finalist**  
-ML-powered hospital queue management. 28% predicted wait time reduction. Flask APIs on GCP, 99.5% uptime. The constraint that made it interesting: the model had to be explainable to non-technical hospital staff, not just accurate.
+**Smart India Hackathon 2024 · Finalist**
+ML-based hospital queue prioritization — 28% predicted wait time reduction. Flask APIs on GCP. The constraint that made it interesting: the model had to be explainable to non-technical hospital staff, not just accurate.
 
-*Built during the hackathon, survived on coffee and the audacity of a deadline.*
-
-**IIIT Delhi Hackathon 2024 · Finalist**  
+**IIIT Delhi Hackathon 2024 · Finalist**
 ResNet50 classifier, 94% accuracy, 30% training time reduction via mixed-precision training. The win came from profiling the data loading bottleneck, not the model itself.
-
-*Turns out standing on the shoulders of pre-trained giants is a solid strategy. The giants don't mind.*
 
 ---
 
 ## Skills
 
-**Core:** Python · PyTorch · TensorFlow · HuggingFace · Scikit-learn  
-**LLMs & RAG:** LangChain · LangGraph · PEFT · LoRA · Transformers · RAG Pipelines  
-**Deployment:** FastAPI · Flask · Docker · GCP · REST APIs  
-**Data:** NumPy · Pandas · Matplotlib · SQL  
-**Systems:** Git · Linux · Jupyter · Weights & Biases  
+**Core:** Python · C++ · PyTorch · TensorFlow · HuggingFace · Scikit-learn
+**LLMs & RAG:** LangChain · LangGraph · PEFT · LoRA · Transformers · RAG Pipelines · OpenAI API
+**Deployment:** FastAPI · Flask · Docker · GCP (Cloud Run) · REST APIs
+**Data:** NumPy · Pandas · Matplotlib · SQL
+**Foundations:** DSA · Linear Algebra · Probability · Statistics
 **CP:** C++ · Codeforces Specialist (1400+)
 
 ---
@@ -155,8 +159,6 @@ ResNet50 classifier, 94% accuracy, 30% training time reduction via mixed-precisi
 - 🥇 Finalist — IIIT Delhi Hackathon 2024
 - 💻 Codeforces Specialist — 1400+
 - 🎯 200+ problems solved across CP platforms
-
-*Currently grinding rated rounds. The graphs are optional; the ego damage isn't.*
 
 ---
 
