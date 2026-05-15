@@ -12,7 +12,7 @@ I work at the intersection of model compression and production ML — shrinking 
 
 ---
 
-Debugging life at BIT Mesra...
+Debugging life at BIT Mesra..
 
 ---
 
