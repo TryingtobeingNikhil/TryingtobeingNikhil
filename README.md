@@ -11,7 +11,7 @@ I work at the intersection of model compression and production ML — shrinking 
 
 ---
 
-Third year at BIT Mesra, studying what doesn't fit in a lecture hall...
+Third year at BIT Mesra, studying what doesn't fit in a lecture hall..
 
 ---
 
