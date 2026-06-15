@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Nikhil Mourya</h1>
 <p align="center"><b>ML Engineer · Multi-Agent Systems · Production NLP</b></p>
-<p align="center"><i>I build systems that know when they don't know enough — then loop until they do.</i></p>
+<p align="center"><i>I build systems that know when they don't know enough, then loop until they do.</i></p>
 
 ---
 
